@@ -1,9 +1,0 @@
-﻿{
-    "name": "com.shpd.readmacapp",
-    "description": "Chrome call native app and sent message to app.",
-    "path": "@@@\\readmacapp.exe",
-    "type": "stdio",
-    "allowed_origins": [
-         "chrome-extension://@@@/"
-    ]
-}
