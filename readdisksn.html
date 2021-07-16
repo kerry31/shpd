@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+ <TITLE>DCM+分销管理系统客户PC磁盘序列号收集</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+ <style> 
+    .div{font-size:12px} 
+    /* css注释：设置使用对象选择器名为“.div”的字体大小为14px */ 
+    .span{font-size:14px;font-weight:bold} 
+
+	/*文本框只读*/
+.textBoxReadonly
+{
+	font-family: 微软雅黑;
+	font-size: 12px;
+	background-color: #CCCBCB;
+	text-align: left;
+}
+
+ </style> 
+
+<SCRIPT LANGUAGE="JavaScript">
+
+	function CloseWindows() {
+		window.opener = null;
+		window.open('', '_self');
+		window.close();
+	}
+
+function startApp() {
+    var evt = document.createEvent("CustomEvent");
+    evt.initCustomEvent('myCustomEvent', true, false, "");
+    // fire the event
+    document.dispatchEvent(evt);
+
+}
+
+</SCRIPT>
+
+ </HEAD>
+
+<BODY onload=";">
+
+<div id="divObject" class="div">
+</div>
+
+<span class="span" >DCM+分销管理系统客户PC磁盘序列号收集</span>
+<BR>
+<BR>
+<div class="div">
+ 磁盘序列号:<input type="text" id="txtDiskSn" NAME="diskSN" VALUE = ""  class="textBoxReadonly" readonly="true"> <br>
+  <button type="button" onClick="startApp()" id="startApp">startApp</button>
+</div>
+
+ </BODY>
+</HTML>
